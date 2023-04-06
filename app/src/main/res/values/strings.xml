@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jaway</string>
+    <string name="introduce_email">Email</string>
+    <string name="introduce_password">Password</string>
+    <string name="login_bttn">Log in</string>
+    <string name="other_login">Or log in with:</string>
+
+    <string name="my_cart_icon">Mi carro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
