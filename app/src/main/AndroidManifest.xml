@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Jaway"
         tools:targetApi="31">
         <activity
+            android:name=".FilmDetail"
+            android:exported="false" />
+        <activity
             android:name=".MyCart"
             android:exported="false" />
 

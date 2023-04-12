@@ -1,7 +1,10 @@
 package com.example.jaway.models
 
-import java.time.LocalDate
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-class Film (val genre : ArrayList<String>, val id: Int, val overview: String,
-            val poster_path: String, val release_date: LocalDate, val title: String) {
+@Parcelize
+data class Film (var genre : ArrayList<String>?=null, var id: Int=0, var overview: String?="",
+            var poster_path: String?="", var release_date: String?="", var title: String?=""):
+    Parcelable {
 }
