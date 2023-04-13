@@ -29,7 +29,7 @@ class RecyclerViewAdapter (llistat: MutableList<Film>, context: Context): Recycl
         // Carga la imagen usando Glide
         Glide.with(context)
             .load(currentFilm.poster_path)
-            .placeholder(R.drawable.starwars) // Opcional: Imagen a mostrar mientras se carga la imagen real
+            .placeholder(R.drawable.starwars) // Imagen a mostrar mientras se carga la imagen real
             .into(holder.image)
 
         holder.name.text = currentFilm.title
@@ -37,7 +37,7 @@ class RecyclerViewAdapter (llistat: MutableList<Film>, context: Context): Recycl
         holder.itemView.setOnClickListener {
             val intent = Intent(context, FilmDetail::class.java)
             intent.putExtra("film", currentFilm as Serializable)
-            context?.startActivity(intent)
+            context.startActivity(intent)
         }
     }
 
